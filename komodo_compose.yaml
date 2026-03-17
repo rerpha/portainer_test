@@ -3,12 +3,8 @@ services:
       image: dhi.io/nginx:1-debian13
       ports:
          - "34567:80"
-      depends_on:
-         - mediawiki
       volumes:
-         - document-root:/var/www/html:ro
-         - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
-
-volumes:
-   document-root:
-   data:
+         - ./templates:/etc/nginx/templates
+      environment:
+         - NGINX_HOST=foobar.com
+         - NGINX_PORT=80
