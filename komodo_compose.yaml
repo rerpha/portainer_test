@@ -1,6 +1,6 @@
 services:
    nginx:
-      image: dhi.io/nginx:1-debian13
+      image: nginx
       ports:
          - "34567:80"
       volumes:
