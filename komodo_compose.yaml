@@ -1,6 +1,6 @@
 services:
    mediawiki:
-      image: dhi.io/mediawiki:latest
+      image: dhi.io/mediawiki:1-debian13-php-fpm-fips-dev
       volumes:
          - document-root:/var/www/html
          - data:/var/www/data
