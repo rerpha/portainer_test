@@ -16,7 +16,7 @@ services:
     volumes:
     - ./templates:/etc/nginx/templates
     ports:
-    - "23456:80"
+    - "23457:80"
     environment:
     - NGINX_HOST=foobar.com
     - NGINX_PORT=80
